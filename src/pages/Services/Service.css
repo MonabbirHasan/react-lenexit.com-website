@@ -1,0 +1,18 @@
+#services-page{
+    padding: 0 ;
+}
+#services-page .title{
+    padding:5px ;
+}
+#services-page .service-box .service-card {
+    transition: .5s;
+    border: 2px solid #eee;
+    margin: 10px 0;
+    padding: 20px;
+    height: 100%;
+}
+
+#services-page .service-box .service-card:hover {
+    border: 1px solid green;
+    transition: .5s;
+}

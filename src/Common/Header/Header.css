@@ -1,0 +1,32 @@
+header {
+    background-color: #eee;
+    /* box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: green !important;
+}
+
+.navbar-brand span {
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000 !important;
+}
+
+header .dropdown-item:focus,
+.dropdown-item:hover {
+    color: #000 !important;
+}

@@ -1,0 +1,8 @@
+.about-section{
+    padding: 40px 0;
+}
+.about-section p{
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 25px;
+}

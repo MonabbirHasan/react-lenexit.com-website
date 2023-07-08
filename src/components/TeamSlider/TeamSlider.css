@@ -1,0 +1,44 @@
+#team-slider {
+    padding: 60px 0;
+}
+
+#team-slider .team-slider-card {
+    padding: 20px 10px;
+
+}
+
+.team-slider-card .team-item {
+    padding: 20px 10px;
+    margin: 10px;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+}
+
+.team-slider-card .team-item h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.team-slider-card .team-item p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+.team-slider-card .team-item .social{
+    padding: 20px 0;
+}
+.team-slider-card .team-item .social a {
+    font-size: 20px;
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #fff;
+    margin: 0 5px;
+    border: 2px solid #eee;
+}
+
+.team-slider-card .team-item .social a:hover {
+    background-color: green;
+    color: #fff;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #fff;
+}
