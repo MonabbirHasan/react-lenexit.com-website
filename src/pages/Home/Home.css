@@ -11,26 +11,32 @@ button {
 
 .banner {
   width: 100%;
-  height: 100%;
-  padding: 80px 0;
-  background: linear-gradient(to left, #05830b9f, rgb(255, 162, 0)), url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148870453.jpg?w=740&t=st=1688299598~exp=1688300198~hmac=289b0e437c1de00160e35b4addcd3e5c5e054635de560eaad26df36d426f4c77');
+  height: 100vh !important;
+  overflow: hidden !important;
+  background: linear-gradient(10deg, rgba(18, 16, 16, 0.863), rgba(2, 54, 198, 0.512)), url('https://cdn.pixabay.com/photo/2020/04/12/18/13/background-5035258_1280.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
-  animation: img 5s linear infinite;
-  background-position: center;
+  background-attachment: fixed;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: center;
+  transition: .5s;
+}
 
+.banner canvas {
+  height: 100vh !important;
 }
 
 .banner .banner_left {
   padding: 30px 0;
   vertical-align: middle;
-  height: 90vh;
+  position: relative;
   display: table-cell;
+  z-index: 100;
+  top: -64vh;
+  /* transform: translateY(-37vh); */
 }
 
-.banner .banner_left form input {
-  color: #fff;
-}
+
 
 .banner_left h1 {
   width: 100%;
@@ -48,13 +54,31 @@ button {
   padding: 0 20px;
 }
 
+.banner_left .typeWriter {
+  font-size: 14px;
+}
+
 /* banner_right */
 .banner .banner_right {
   padding: 5px;
 }
 
-.banner .banner_right .img-frame {
-  animation: img 5s linear infinite;
+.banner .banner_left .banner_left_btn {
+  color: #fff !important;
+  border: 3px solid #fff;
+  margin-left: 20px;
+}
+
+.banner .banner_left .banner_left_btn a {
+  color: #fff !important;
+}
+
+.banner .banner_left .banner_left_btn:hover {
+  background: #fff;
+}
+
+.banner .banner_left .banner_left_btn:hover a {
+  color: #111 !important;
 }
 
 /* @keyframes img {

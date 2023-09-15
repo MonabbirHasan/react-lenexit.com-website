@@ -15,3 +15,9 @@
     text-transform: capitalize;
     color: #111;
 }
+.author .blog_author_name{
+    font-size: 18px;
+    text-transform: capitalize;
+    vertical-align: middle;
+    margin-top: 3px;
+}

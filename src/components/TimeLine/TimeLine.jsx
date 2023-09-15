@@ -47,8 +47,8 @@ const TimeLine = () => {
                 <div className="row">
                     <div className="col-md-6 col-sm col-lg-6">
                         <div className="title">
-                            <p className='title-badge text-white text-uppercase bg-success p-1 d-inline' style={{ fontSize: "10px" }}>5 Steps To Success</p>
-                            <h3 className='text-capitalize py-2'>Efficient Workflow: 5 Steps to Success with <span style={{ color: "green" }}>lenextit's</span> Comprehensive Development Process </h3>
+                            <p className='title-badge text-white text-uppercase bg-success p-1 d-inline' style={{ fontSize: "12px" }}>5 Steps To Success</p>
+                            <h3 className='text-capitalize py-2'>Efficient Workflow: 5 Steps to Success with  Comprehensive Development Process </h3>
                         </div>
                         <p>
                             Seamless Journey: Lenexit's 5-Step Workflow Delivers a Smooth and Efficient Development Process. From in-depth discovery and requirement gathering to captivating design and rigorous testing, our expert team ensures every aspect is meticulously executed. With deployment and launch handled seamlessly, we provide ongoing support and maintenance to keep your digital solution optimized. Our streamlined approach prioritizes efficiency and effectiveness, allowing us to deliver exceptional results. Trust Lenexit to guide you through this structured workflow, ensuring a successful and satisfying development experience from start to finish.
