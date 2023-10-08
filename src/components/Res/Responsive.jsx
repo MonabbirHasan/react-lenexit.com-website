@@ -2,6 +2,7 @@ import React from 'react'
 import "./Responsive.css"
 import responsive_video from "../../assets/video/responsive-xperience.mp4"
 import thumbnail from "../../assets/image/12084798_20943953.jpg";
+import responsiveVideo_banner from "../../assets/video/responsive_video_banner.jpg";
 const Responsive = () => {
     return (
         <section id='responsive'>
@@ -20,7 +21,7 @@ const Responsive = () => {
                     </div>
                     <div className="col-md-6 col-sm col-lg-6">
                         <div className='py-3 res-video'>
-                            <video title='Engaging, Adaptive, and User-Friendly Solutions' poster={thumbnail} autoPlay muted loop security='true' className='img-fluid'>
+                            <video title='Engaging, Adaptive, and User-Friendly Solutions' poster={responsiveVideo_banner} autoPlay muted loop security='true' className='img-fluid'>
                                 <source src={responsive_video} type="video/mp4" />
                             </video>
                         </div>

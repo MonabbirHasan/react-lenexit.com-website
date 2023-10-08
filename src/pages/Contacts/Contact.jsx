@@ -8,6 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../../Common/Footer/Footer'
 import emailjs from '@emailjs/browser';
+import contactVideo_banner from "../../assets/video/contact_video_banner.jpg";
 const Contact = () => {
     var [username, setUsername] = useState('')
     var [email, setEmail] = useState('')
@@ -103,7 +104,7 @@ const Contact = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-5 col-sm-2">
-                            <video autoPlay muted loop src={contact_video} style={{ height: "370px" }} className='img-fluid'></video>
+                            <video poster={contactVideo_banner} autoPlay muted loop src={contact_video} style={{ height: "370px" }} className='img-fluid'></video>
                             <div className="contact_page_left_side_details">
                                 <div className='shadow-sm p-4 border my-1 rounded'>
                                     <img title='phone-connected with lenexit' width="30" height="30" src="https://img.icons8.com/ios-filled/000000/phone-disconnected.png" alt="phone-connected with lenexit" />

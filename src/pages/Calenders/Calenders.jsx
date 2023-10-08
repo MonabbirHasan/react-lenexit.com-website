@@ -10,7 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../../Common/Footer/Footer';
 import emailjs from '@emailjs/browser';
-import thumbnail from "../../assets/image/12084798_20943953.jpg";
+import scheduleVideo_banner from "../../assets/video/scheduling_video_banner.jpg"
 const Calenders = () => {
     var [showModal, setShow] = useState(false);
     var [start_date, setStartDate] = useState('');
@@ -28,28 +28,6 @@ const Calenders = () => {
         setTimeout(() => {
             document.getElementById("schedule_submit").style.display = 'block'
         }, 2000);
-
-        // if (username == "") {
-        //     document.getElementById("username").style.borderColor="red"
-        // }else if(email==""){
-        //     document.getElementById("email").style.borderColor="red"
-        //     document.getElementById("username").style.borderColor="green"
-        //     document.getElementById("startDate").style.borderColor="green"
-        //     document.getElementById("serviceType").style.borderColor="green"
-        // }else if(start_date==""){
-        //     document.getElementById("startDate").style.borderColor="red"
-        //     document.getElementById("serviceType").style.borderColor="green"
-        // }else if(document.getElementById("serviceType").value==0){
-        //     document.getElementById("serviceType").style.borderColor="red"
-        //     document.getElementById("startDate").style.borderColor="green"
-        //     console.log(document.getElementById("serviceType").value)
-        // }
-        // else{
-        //     document.getElementById("username").style.borderColor="green"
-        //     document.getElementById("email").style.borderColor="green"
-        //     document.getElementById("startDate").style.borderColor="green"
-        //     document.getElementById("serviceType").style.borderColor="green"
-        // }
 
         // Get references to input and select elements
         const input1 = document.getElementById('username');
@@ -149,7 +127,7 @@ const Calenders = () => {
                         <div className=''>
                             <div className="meeting_form_wrapper">
                                 <div className="">
-                                    <video title='free consulting' poster={thumbnail} autoPlay muted loop security='true' className='img-fluid'>
+                                    <video title='free consulting' poster={scheduleVideo_banner} autoPlay muted loop security='true' className='img-fluid'>
                                         <source src={schedule} type="video/mp4" />
                                     </video>
                                 </div>

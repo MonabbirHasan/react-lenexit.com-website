@@ -1,6 +1,8 @@
-import React from 'react'
-import welcomeVideo from "../../assets/video/welcome-plants.mp4"
-import aboutusVideo from "../../assets/video/about-us.mp4"
+import React from 'react';
+import welcomeVideo from "../../assets/video/welcome-plants.mp4";
+import aboutusVideo from "../../assets/video/about-us.mp4";
+import welcomeVideo_Banner from "../../assets/video/welcome_video_banner.jpg";
+import teamVideo_banner from "../../assets/video/team_video_banner.jpg";
 import "./About.css"
 import { NavLink } from 'react-router-dom'
 const About = () => {
@@ -9,8 +11,8 @@ const About = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-sm col-lg-4">
-                        <video autoPlay muted loop src={welcomeVideo} className="img-fluid" title='the power of technology lenexit.com'></video>
-                        <video autoPlay muted loop src={aboutusVideo} className="img-fluid" title='the power of technology lenexit.com'></video>
+                        <video poster={welcomeVideo_Banner} autoPlay muted loop src={welcomeVideo} className="img-fluid" title='the power of technology lenexit.com'></video>
+                        <video poster={teamVideo_banner} autoPlay muted loop src={aboutusVideo} className="img-fluid" title='the power of technology lenexit.com'></video>
                     </div>
                     <div className="col-md-8 col-sm col-lg-8">
                         <div className="title">
