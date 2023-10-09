@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import "./Portfolio.css"
+import React, { useEffect, useState } from 'react';
+import "./Portfolio.css";
 import "../../assets/css/media-query.css";
-import img from "../../assets/image/meet.jpeg"
-import { NavLink } from 'react-router-dom'
-import { portfolioData } from '../../services/static/portfolioData'
-import Banner from '../../Common/Banners/Banner'
-import Header from '../../Common/Header/Headers'
+import img from "../../assets/image/meet.jpeg";
+import { NavLink } from 'react-router-dom';
+import { portfolioData } from '../../services/static/portfolioData';
+import Banner from '../../Common/Banners/Banner';
+import Header from '../../Common/Header/Headers';
 import Footer from '../../Common/Footer/Footer';
+import githubIcon from "../../assets/image/social_image/github.png";
+import domainIcon from "../../assets/image/social_image/domain.png";
 export const Portfolio = () => {
     const [data, setData] = useState([]);
     const [collection, setCollection] = useState([]);
@@ -45,38 +47,14 @@ export const Portfolio = () => {
                                     return (
                                         <div className="item p-3">
                                             <div className='social_link pb-3 px-2' style={{ display: "flex", justifyContent: "space-between" }}>
-                                                <span><NavLink to={item.github_url}><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="github" /></NavLink></span>
-                                                <span><NavLink to={item.live_url}><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="domain" /></NavLink></span>
+                                                <span><NavLink to={item.github_url}><img width="30" height="30" src={githubIcon} alt="github" /></NavLink></span>
+                                                <span><NavLink to={item.live_url}><img width="30" height="30" src={domainIcon} alt="domain" /></NavLink></span>
                                             </div>
                                             <img title={item.title}  className='portfolio_thumb' src={item.thumbnail} style={{ width: '100%', height: "200px" }} alt={item.title} />
                                             <div className="details">
-                                                {/* <div className="date pt-3 text-left mb-2">
-                                                    <span className='px-1 text-uppercase font-weight-bold'><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/12b000/thursday.png" alt="thursday" /></span>
-                                                    <span className='px-1 text-uppercase font-weight-bold'>{item['start-date']}</span>
-                                                    <span style={{ fontSize: "12px" }} className='px-1 rounded badge badge-success text-uppercase font-weight-bold'>to</span>
-                                                    <span className='px-1 text-uppercase font-weight-bold'>{item['end-date']}</span>
-                                                </div>
-                                                <div className="language text-left">
-                                                    <div className='portfoli_details'>
-                                                        <p className='badge badge-success text-white rounded m-1'>structure lang: {item['structure-language']}</p>
-                                                        <p className='badge badge-success text-white rounded m-1'>lang: {item['design-language']}</p>
-                                                    </div>
-                                                    <div className='portfoli_details'>
-                                                        <p className='badge badge-success text-white rounded m-1'>Ui lang: {item['ui-language']}</p>
-                                                        <p className='badge badge-success text-white rounded m-1'>server Lang: {item['server-language']}</p>
-                                                    </div>
-                                                    <div className='portfoli_details'>
-                                                        <p className='badge badge-success text-white rounded m-1'>DB: {item.database}</p>
-                                                        <p className='badge badge-success text-white rounded m-1'>server: {item['host-server']}</p>
-                                                    </div>
-                                                </div> */}
                                                 <div className="description">
                                                     <p style={{ fontSize: '16px' }} className='m-0 p-0 p-1 font-weight-bold pt-3 text-left text-capitalize'>{item.title.slice(0, 50)}</p>
-                                                    {/* <p style={{ fontSize: '14px' }} className='m-0 p-0 pt-2 pl-1 text-left text-capitalize'>{item.description.slice(0, 100)}</p> */}
                                                 </div>
-                                                {/* <div className='text-left pt-3'>
-                                                    <button className='badge m-0 ml-1 text-capitalize btn-outline-success'><NavLink style={{ textDecoration: "none", color: "#111" }} to={""}>read more</NavLink></button>
-                                                </div> */}
                                             </div>
                                         </div>
                                     );

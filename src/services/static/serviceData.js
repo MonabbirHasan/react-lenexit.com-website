@@ -11,10 +11,22 @@ import marketing from "../../assets/image/service/digital-marketing.jpg";
 import generation from "../../assets/image/service/Lead-generation.jpg";
 import Maintenance from "../../assets/image/service/Image-Maintenance.jpg";
 
+import codeIcon from "../../assets/image/code.png";
+import monitorIcon from "../../assets/image/monitor.png";
+import mobileappIcon from "../../assets/image/mobile-app.png";
+import windowIcon from "../../assets/image/window.png";
+import designIcon from "../../assets/image/design.png";
+import seoIcon from "../../assets/image/seo.png";
+import pluginIcon from "../../assets/image/plugin.png";
+import wordpressIcon from "../../assets/image/wordpress.png";
+import cmsIcon from "../../assets/image/cms.png"
+import marketingIcon from "../../assets/image/marketing.png";
+import optinmonsterIcon from "../../assets/image/optin-monster.png";
+import websitemaintenanceIcon from "../../assets/image/website-maintenance.png";
 export const serviceData = [
     {
         "service_id": "1",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/code.png',
+        "card_icons": codeIcon,
         "card_title": "full-stack web development",
         "card_description": `Lenexit offers full-stack web development services, delivering end-to-end solutions that encompass front-end and back-end expertise for seamless digital experiences.`,
         "service_title": "Custom Web Development Service",
@@ -85,7 +97,7 @@ export const serviceData = [
     {
         "service_id": "2",
         "steps_card_icons": "",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/monitor--v1.png',
+        "card_icons": monitorIcon,
         "card_title": "desktop application development",
         "card_description": `Lenexit specializes in desktop app development, delivering comprehensive solutions that encompass both front-end and back-end expertise for optimal user experiences.`,
         "service_title": "Desktop application Development Service",
@@ -139,7 +151,7 @@ export const serviceData = [
     },
     {
         "service_id": "3",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/taxi-mobile-app.png',
+        "card_icons": mobileappIcon,
         "card_title": "android & ios mobile app development",
         "card_description": `Lenexit excels in Android and iOS mobile app development, delivering intuitive and engaging applications that captivate users and drive business growth.`,
         "service_title": "android & IOs Mobile app Development Service",
@@ -210,7 +222,7 @@ export const serviceData = [
     {
         "service_id": "4",
         "steps_card_icons": "",
-        "card_icons": 'https://img.icons8.com/pulsar-line/48/window-bug.png',
+        "card_icons": windowIcon,
         "card_title": "Website Penetration Testing",
         "card_description": `Lenexit offers professional penetration testing services to identify and address vulnerabilities, ensuring the security and resilience of your digital assets.`,
         "service_title": "Website Penetration Testing service",
@@ -244,7 +256,7 @@ export const serviceData = [
     },
     {
         "service_id": "5",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/design--v1.png',
+        "card_icons": designIcon,
         "card_title": "Powerful Eye Catching Ui/Ux Design",
         "card_description": `Lenexit provides captivating graphics design services that enhance brand identity and create visually appealing designs for a lasting impression.`,
         "service_title": "our Powerful Eye Catching Ui/Ux Design service",
@@ -284,7 +296,7 @@ export const serviceData = [
     },
     {
         "service_id": "6",
-        "card_icons": 'https://img.icons8.com/external-justicon-lineal-justicon/64/external-seo-design-amp-thinking-process-justicon-lineal-justicon.png',
+        "card_icons":seoIcon,
         "card_title": "Search Engine Optimization (SEO)",
         "card_description": `Lenexit offers effective SEO services to boost online visibility, increase organic traffic, and improve search engine rankings for long-term success. `,
         "service_title": "Search Engine Optimization (SEO) service",
@@ -326,7 +338,7 @@ export const serviceData = [
     },
     {
         "service_id": "7",
-        "card_icons": 'https://img.icons8.com/glyph-neue/64/plugin.png',
+        "card_icons": pluginIcon,
         "card_title": "Custom Plugin Development",
         "card_description": `Lenexit specializes in custom plugin development, creating tailored solutions that seamlessly integrate with your existing systems and enhance the functionality of your website or application.`,
         "service_title": "Our Custom Plugin Development service",
@@ -367,7 +379,7 @@ export const serviceData = [
     },
     {
         "service_id": "8",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/wordpress--v1.png',
+        "card_icons": wordpressIcon,
         "card_title": "Custom Theme Development",
         "card_description": `Lenexit excels in custom WordPress theme development, crafting unique and visually captivating designs that align with your brand and provide a seamless user experience.`,
         "service_title": "Custom Theme Development service",
@@ -423,7 +435,7 @@ export const serviceData = [
     },
     {
         "service_id": "9",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/cms.png',
+        "card_icons": cmsIcon,
         "card_title": "Ecommerce Cms Website Development",
         "card_description": `Lenexit specializes in ecommerce website development, creating robust and user-friendly online stores that drive sales and provide a seamless shopping experience for customers.`,
         "service_title": "Ecommerce Cms Website Development service",
@@ -493,7 +505,7 @@ export const serviceData = [
     },
     {
         "service_id": "10",
-        "card_icons": 'https://img.icons8.com/ios-glyphs/30/marketing.png',
+        "card_icons": marketingIcon,
         "card_title": "Full-Stack Digital Marketing",
         "card_description": `Lenexit offers comprehensive digital marketing services, leveraging effective strategies to enhance online visibility, drive targeted traffic, and maximize conversions for your business growth.`,
         "service_title": "Full-Stack Digital Marketing service",
@@ -534,7 +546,7 @@ export const serviceData = [
     },
     {
         "service_id": "11",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/optin-monster.png',
+        "card_icons": optinmonsterIcon,
         "card_title": "Powerful Lead Generation",
         "card_description": `Lenexit's Powerful Lead Generation service drives targeted traffic, captures high-quality leads, and maximizes conversions for accelerated business growth.`,
         "service_title": "Powerful Lead Generation service",
@@ -575,7 +587,7 @@ export const serviceData = [
     },
     {
         "service_id": "12",
-        "card_icons": 'https://img.icons8.com/ios-filled/50/settings-3.png',
+        "card_icons": websitemaintenanceIcon,
         "card_title": "Big Website Maintenance",
         "card_description": `Lenexit's comprehensive Big Website Maintenance service provides reliable support and upkeep, ensuring your website remains secure, updated, and optimized for peak performance.`,
         "service_title": "Big Website Maintenance service",

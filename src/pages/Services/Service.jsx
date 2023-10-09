@@ -1,12 +1,13 @@
-import React from 'react'
-import "./Service.css"
+import React from 'react';
+import "./Service.css";
 import "../../assets/css/media-query.css";
-import Header from '../../Common/Header/Headers'
-import Banner from '../../Common/Banners/Banner'
+import Header from '../../Common/Header/Headers';
+import Banner from '../../Common/Banners/Banner';
 import { serviceData } from '../../services/static/serviceData';
 import ServiceImg from "../../assets/image/Services_Banner.jpeg"
 import { NavLink } from 'react-router-dom';
 import Footer from '../../Common/Footer/Footer';
+
 const Service = () => {
     function Slugs(text) {
         return text
