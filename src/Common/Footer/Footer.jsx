@@ -1,12 +1,27 @@
-import React, { useState } from 'react'
-import "./Footer.css"
-import "../../assets/css/media-query.css"
-import FooterImg from "../../assets/vai/logo1.png"
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react';
+import "./Footer.css";
+import "../../assets/css/media-query.css";
+import FooterImg from "../../assets/vai/logo1.png";
+import { NavLink } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Accordion from 'react-bootstrap/Accordion';
-
+import payoneerIcon from "../../assets/image/pay_method_image/payoneer.png";
+import stripeIcon from "../../assets/image/pay_method_image/stripe.png";
+import paypalIcon from "../../assets/image/pay_method_image/paypal.png";
+import visaIcon from "../../assets/image/pay_method_image/visa.png";
+import mastercardIcon from "../../assets/image/pay_method_image/mastercard.png";
+import googlepayIcon from "../../assets/image/pay_method_image/google-pay.png";
+import bitcoinIcon from "../../assets/image/pay_method_image/bitcoin.png";
+import BinanceIcon from "../../assets/image/pay_method_image/Binance.png";
+import rezorpyIcon from "../../assets/image/pay_method_image/rezorpy.png";
+import linkedinIcon from "../../assets/image/social_image/linkedin.png";
+import facebookIcon from "../../assets/image/social_image/facebook.png";
+import instagramIcon from "../../assets/image/social_image/instagram.png";
+import twitterIcon from "../../assets/image/social_image/twitter.png";
+import emailIcon from "../../assets/image/social_image/email.png";
+import fiverrIcon from "../../assets/image/social_image/fiverr.png";
+import upworkIcon from "../../assets/image/social_image/upwork.png";
 const Footer = () => {
     var [FooterEmail, setFooterEmail] = useState();
     function LinkedInWindow(link) { window.open(link); }
@@ -39,11 +54,11 @@ const Footer = () => {
         };
         emailjs.init("lMgYQoX_cHOnwd6_K");
         emailjs.send('service_ryvfsfd', 'template_6ifyqbf', templateParams)
-        .then(function (response) {
-            console.log('SUCCESS!', response.status, response.text);
-        }, function (error) {
-            console.log('FAILED...', error);
-        });
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
     }
 
     return (
@@ -59,17 +74,15 @@ const Footer = () => {
                                 </p>
                             </div>
                             <div className='payment_methods'>
-
-                                <span><img title='pay with payoneer' width="30" height="30" src="https://img.icons8.com/color/30/payoneer.png" alt="payoneer" /></span>
-                                <span><img title='pay with stripe' width="30" height="30" src="https://img.icons8.com/color/30/stripe.png" alt="stripe" /></span>
-                                <span><img title='pay with paypal' width="30" height="30" src="https://img.icons8.com/color/30/paypal.png" alt="paypal" /></span>
-                                <span><img title='pay with visa' width="30" height="30" src="https://img.icons8.com/color/30/visa.png" alt="visa" /></span>
-                                <span><img title='pay with mastercard' width="30" height="30" src="https://img.icons8.com/color/30/mastercard.png" alt="mastercard" /></span>
-                                <span><img title='pay with google-pay' width="30" height="30" src="https://img.icons8.com/color/30/google-pay-india.png" alt="google-pay-india" /></span>
-                                <span><img title='pay with bitcoin' width="30" height="30" src="https://img.icons8.com/color/30/bitcoin--v1.png" alt="bitcoin--v1" /></span>
-                                <span><img title='pay with Binance' width="30" height="30" src="https://img.icons8.com/external-black-fill-lafs/64/FF9A25/external-Binance-cryptocurrency-black-fill-lafs.png" alt="external-Binance-cryptocurrency-black-fill-lafs" /></span>
-                                <span><img title='pay with rezorpy' width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADYElEQVRYhb2WXWgcVRTHf2d2s5N02hJT2xdLSD9kRXAkaUJAX1KLFLQUQ7JYYSsU3xqoD/ogIljxQXElSGIj6IMPFkGCtT7YgtAYIbRq2RaEtipbqW2hyFI/YlKzZuYeH5rWceduspOv+zRz/vfc/+/O3HvPhVVufkG9HUf0bb+gHoCspnnXEe0y8CEQFgfkYYD0ahh3D+n6IMWggTzgivDOHW3FATqGdXcgDAIP3g2GfL7iAJ0jmkV5RSEHuBHpeko5t6IAHe9qr0IB2BYThdK3h2RyRQAis86jNbtNRF+WBcAvqJdZwwFVXgDa5uvrKJ9G35e8DTtHNGsMb4nwBAtPqFwckE3RwKK/gF9QL93EQVWeF+G+OtPGqwOLAvAL6jWs4SOg1yKXESbR+AIUOFMdcxYDkFnLFmBPVXgWOB44tKNMWtKmFM4uCwCGbqAhEimL4Zl1ZXI6xR/AQ5as0roy3ywLgCqPzT3OAsdnb7Hl4kjf6fFjz7oNXs3FWBw/LMGSAbYPqYuQA66I8mSxTN8PH/Q/HobOBC3XKqLstSYKn9nCiRfhPSl8owz+aXj12nv9rW4gpxDpEdGPe3q+4i/osqRVigfli2UB+D3k+9KxneczN+7tFZX3EZrnpJPTm2hFaa3OEf47+5cMcHV431bX2XgU1Y5IOFCcs6GyS6CpOkeFU0sH8Pd7jTN/v6yEh1DWVln8Ugmnrwi8acmcFcv2SwTQdH9ft87MDKv9/wIyRulkBe7ujojE1VQQPwHrA2h7qtl106+pkle0pVY3RU/MXbfWxzTDhWj5rRsgk+3PifI6SrZ2Zb3d/jGNYwbesGmO1J69FcDdlttOWl9EyQPeAt4AF8kfnQJ2WLRAldOJAEiZl1B5rg7jO228vYUNwNaYovxkDD/Pl2w7CXsSmBtR80kqTSewIaYK353/jZt1AzQ+sK8NJH6Pq91upjV1SZU91WPd9meCw2LqBjAaPJ3AHJQLU6XRMsJui3rDwNcLDfE/ADGyMxGAMNo+pBttlw+EH88NSKl+AH+/h5hsIoBQvnTSPGrVNF775wVouDWdBdmcwH6ycnm0hCFn9699/FoBUo6zl0TFScb8gnoIj1jEsnFqV0ArgMKu+s1BMCcyHpuB2FdT5Uzzr1yvZ5x/AQvZI0NADwyPAAAAAElFTkSuQmCC" alt="external-Binance-cryptocurrency-black-fill-lafs" /></span>
-
+                                <span><img title='pay with payoneer' width="30" height="30" src={payoneerIcon} alt="payoneer" /></span>
+                                <span><img title='pay with stripe' width="30" height="30" src={stripeIcon} alt="stripe" /></span>
+                                <span><img title='pay with paypal' width="30" height="30" src={paypalIcon} alt="paypal" /></span>
+                                <span><img title='pay with visa' width="30" height="30" src={visaIcon} alt="visa" /></span>
+                                <span><img title='pay with mastercard' width="30" height="30" src={mastercardIcon} alt="mastercard" /></span>
+                                <span><img title='pay with google-pay' width="30" height="30" src={googlepayIcon} alt="google-pay-india" /></span>
+                                <span><img title='pay with bitcoin' width="30" height="30" src={bitcoinIcon} alt="bitcoin" /></span>
+                                <span><img title='pay with Binance' width="30" height="30" src={BinanceIcon} alt="Binance" /></span>
+                                <span><img title='pay with rezorpy' width="30" height="30" src={rezorpyIcon} alt="rezorpy" /></span>
                             </div>
                         </div>
                         <div className="footer-item col-md-3">
@@ -101,13 +114,27 @@ const Footer = () => {
                                     </p>
                                 </div>
                                 <div className='pt-3 footer_social_link'>
-                                    <span title='lenexit linkedin' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => LinkedInWindow("https://www.linkedin.com/company/lenexit")}><img width="30" height="30" src="https://img.icons8.com/ios-filled/ffffff/linkedin.png" alt="linkedin" /></span>
-                                    <span title='lenexit facebook' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => FacebookWindow("https://www.facebook.com/itlenex")}><img width="30" height="30" src="https://img.icons8.com/ios-filled/ffffff/facebook--v1.png" alt="facebook" /></span>
-                                    <span title='lenexit instagram' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => InstagramWindow("https://www.instagram.com/lenex.it")}><img width="30" height="30" src="https://img.icons8.com/ios-filled/ffffff/instagram-new--v1.png" alt="instagram-new-" /></span>
-                                    <span title='lenexit twitter' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => TwitterWindow("https://twitter.com/itLenex")}><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/ffffff/twitter--v1.png" alt="twitter" /></span>
-                                    <span title='lenexit lenexIT' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item'><a href="mailto:itlenex@gmail.com"><img width="25" height="25" src="https://img.icons8.com/ios-filled/ffffff/new-post.png" alt="new-post" /></a></span>
-                                    <span title='lenexit fiverr' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => FiverrWindow("https://www.fiverr.com/users/touhid4646")}><img width="30" height="30" src="https://img.icons8.com/ios-filled/ffffff/fiverr--v2.png" alt="fiverr--v2" /></span>
-                                    <span title='lenexit upwork' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => UpworkWindow("https://www.upwork.com/freelancers/~01458bdf759deab25f")}><img width="30" height="30" src="https://img.icons8.com/ios-filled/ffffff/upwork.png" alt="upwork" /></span>
+                                    <span title='lenexit linkedin' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => LinkedInWindow("https://www.linkedin.com/company/lenexit")}>
+                                        <img width="30" height="30" src={linkedinIcon} alt="linkedin" />
+                                    </span>
+                                    <span title='lenexit facebook' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => FacebookWindow("https://www.facebook.com/itlenex")}>
+                                        <img width="30" height="30" src={facebookIcon} alt="facebook" />
+                                    </span>
+                                    <span title='lenexit instagram' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => InstagramWindow("https://www.instagram.com/lenex.it")}>
+                                        <img width="30" height="30" src={instagramIcon} alt="instagram" />
+                                    </span>
+                                    <span title='lenexit twitter' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => TwitterWindow("https://twitter.com/itLenex")}>
+                                        <img width="30" height="30" src={twitterIcon} alt="twitter" />
+                                    </span>
+                                    <span title='lenexit lenexIT' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item'><a href="mailto:itlenex@gmail.com">
+                                        <img width="25" height="25" src={emailIcon} alt="email" />
+                                    </a></span>
+                                    <span title='lenexit fiverr' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => FiverrWindow("https://www.fiverr.com/users/touhid4646")}>
+                                        <img width="30" height="30" src={fiverrIcon} alt="fiverr" />
+                                    </span>
+                                    <span title='lenexit upwork' style={{ cursor: "pointer" }} className='p-2 footer_last_social_item' onClick={() => UpworkWindow("https://www.upwork.com/freelancers/~01458bdf759deab25f")}>
+                                        <img width="30" height="30" src={upworkIcon} alt="upwork" />
+                                    </span>
                                 </div>
                             </div>
                         </div>

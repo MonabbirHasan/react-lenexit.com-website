@@ -3,7 +3,15 @@ import "./Services.css"
 import { NavLink } from 'react-router-dom'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import codeIcon from "../../assets/image/code.png";
+import monitorIcon from "../../assets/image/monitor.png";
+import mobileappIcon from "../../assets/image/mobile-app.png";
+import windowbugIcon from "../../assets/image/window.png";
+import designIcon from "../../assets/image/design.png";
+import seoIcon from "../../assets/image/seo.png";
+import pluginIcon from "../../assets/image/plugin.png";
+import wordpressIcon from "../../assets/image/wordpress.png";
+import cmsIcon from "../../assets/image/cms.png";
 const Responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -51,7 +59,7 @@ const Services = () => {
                             >
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img title='full-stack web development' width="50" height="50" src="https://img.icons8.com/ios-filled/50/code.png" alt=" full-stack web development services" />
+                                        <img title='full-stack web development' width="50" height="50" src={codeIcon} alt=" full-stack web development services" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>full-stack web development</h4>
                                     </div>
                                     <p className='pt-3'>
@@ -60,7 +68,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img title='Desktop application development' width="50" height="50" src="https://img.icons8.com/ios-filled/50/monitor--v1.png" alt="desktop app development" />
+                                        <img title='Desktop application development' width="50" height="50" src={monitorIcon} alt="desktop app development" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>Desktop application development</h4>
                                     </div>
                                     <p className='pt-3'>
@@ -69,7 +77,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img title='android & ios mobile app development' width="50" height="50" src="https://img.icons8.com/ios-filled/50/taxi-mobile-app.png" alt="Android and iOS mobile app development" />
+                                        <img title='android & ios mobile app development' width="50" height="50" src={mobileappIcon} alt="Android and iOS mobile app development" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>android & ios mobile app development</h4>
                                     </div>
                                     <p className='pt-3'>
@@ -78,7 +86,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img title='website penetration testing' width="50" height="50" src="https://img.icons8.com/pulsar-line/48/window-bug.png" alt="penetration testing services" />
+                                        <img title='website penetration testing' width="50" height="50" src={windowbugIcon} alt="penetration testing services" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>website penetration testing</h4>
                                     </div>
                                     <p className='pt-3' style={{ fontSize: '14px' }}>
@@ -87,7 +95,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img width="50" title='graphics design' height="50" src="https://img.icons8.com/ios-filled/50/design--v1.png" alt="graphics design services" />
+                                        <img width="50" title='graphics design' height="50" src={designIcon} alt="graphics design services" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>graphics design</h4>
                                     </div>
                                     <p className='pt-3' style={{ fontSize: '14px' }}>
@@ -96,7 +104,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img width="64" height="64" title='search engine optimization (SEO)' src="https://img.icons8.com/external-justicon-lineal-justicon/64/external-seo-design-amp-thinking-process-justicon-lineal-justicon.png" alt="external-seo-design-amp-thinking-process-justicon-lineal-justicon" />
+                                        <img width="64" height="64" title='search engine optimization (SEO)' src={seoIcon} alt="external-seo-design-amp-thinking-process-justicon-lineal-justicon" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>search engine optimization (SEO)</h4>
                                     </div>
                                     <p className='pt-3' style={{ fontSize: '14px' }}>
@@ -105,7 +113,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img width="50" height="50" src="https://img.icons8.com/glyph-neue/64/plugin.png" title='custom plugin development' alt="custom plugin development" />
+                                        <img width="50" height="50" src={pluginIcon} title='custom plugin development' alt="custom plugin development" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>custom plugin development</h4>
                                     </div>
                                     <p className='pt-3' style={{ fontSize: '14px' }}>
@@ -114,7 +122,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/wordpress--v1.png" title='custom theme development' alt="custom WordPress theme development" />
+                                        <img width="50" height="50" src={wordpressIcon} title='custom theme development' alt="custom WordPress theme development" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>custom theme development</h4>
                                     </div>
                                     <p className='pt-3' style={{ fontSize: '14px' }}>
@@ -123,7 +131,7 @@ const Services = () => {
                                 </div>
                                 <div className="service-card shadow">
                                     <div className='d-flex'>
-                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/cms.png" title='ecommerce cms website development' alt="ecommerce website development" />
+                                        <img width="50" height="50" src={cmsIcon} title='ecommerce cms website development' alt="ecommerce website development" />
                                         <h4 className='pl-4 text-capitalize service_card_title'>ecommerce cms website development</h4>
                                     </div>
                                     <p className='pt-3' style={{ fontSize: '14px' }}>
@@ -135,7 +143,7 @@ const Services = () => {
                     </div>
                     <div className='mt-5 ml-3'>
                         <button class="btn text-capitalize" style={{ background: 'blue', margin: '0' }} role="button">
-                            <NavLink className='text-white' style={{textDecoration:'none'}} to={"/service"} >learn more</NavLink>
+                            <NavLink className='text-white' style={{ textDecoration: 'none' }} to={"/service"} >learn more</NavLink>
                         </button>
                     </div>
                 </div>

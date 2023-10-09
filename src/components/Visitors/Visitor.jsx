@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import countryIcon from "../../assets/image/country.png";
+import visitorIcon from "../../assets/image/visitor.png";
+import serviceIcon from "../../assets/image/service.png";
+import clientmanagementIcon from "../../assets/image/client-management.png";
 import "./Visitor.css";
 const Visitor = () => {
     var [visitorCount, setVisitorCount] = useState(0)
@@ -31,7 +35,7 @@ const Visitor = () => {
                         <div className="col-md-3 col-sm">
                             <div className="visitor_card">
                                 <div>
-                                    <img title='our visitor' width="100%" height="100%" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-visitor-internet-marketing-service-flaticons-flat-flat-icons.png" alt='our visitor' />
+                                    <img title='our visitor' width="100%" height="100%" src={visitorIcon} alt='our visitor' />
                                 </div>
                                 <div className='ml-4 pl-3'>
                                     <p>our visitor</p>
@@ -42,7 +46,7 @@ const Visitor = () => {
                         <div className="col-md-3 col-sm">
                             <div className="visitor_card">
                                 <div>
-                                    <img title='country we serve' width="100%" height="100%" src="https://img.icons8.com/color/48/country.png" alt="country served" />
+                                    <img title='country we serve' width="100%" height="100%" src={countryIcon} alt="country served" />
                                 </div>
                                 <div className='ml-4 pl-3'>
                                     <p>country</p>
@@ -53,7 +57,7 @@ const Visitor = () => {
                         <div className="col-md-3 col-sm">
                             <div className="visitor_card">
                                 <div>
-                                    <img title='our happy client' width="100%" height="100%" src="https://img.icons8.com/water-color/50/client-management.png" alt="client-management" />
+                                    <img title='our happy client' width="100%" height="100%" src={clientmanagementIcon} alt="client-management" />
                                 </div>
                                 <div className='ml-4 pl-3'>
                                     <p>our clients</p>
@@ -64,7 +68,7 @@ const Visitor = () => {
                         <div className="col-md-3 col-sm">
                             <div className="visitor_card">
                                 <div>
-                                    <img title='our service' width="100%" height="100%" src="https://img.icons8.com/fluency/48/service.png" alt="our services" />
+                                    <img title='our service' width="100%" height="100%" src={serviceIcon} alt="our services" />
                                 </div>
                                 <div className='ml-4 pl-3'>
                                     <p>our services</p>
