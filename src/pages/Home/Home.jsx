@@ -79,7 +79,7 @@ return (
         </div>
       </div>
       <br />
-      <Visitor />
+      {/* <Visitor /> */}
       <About />
       <Services />
       <Responsive />
